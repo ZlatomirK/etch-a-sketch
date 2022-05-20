@@ -26,7 +26,7 @@ function creatDivs(col , rows) {
 creatDivs(16,16)
 
 function Clear() {
-    btnClear.textContent = 'Clear'
+    btnClear.textContent = 'CLEAR'
     btnClear.addEventListener('click', () => {
         reSet();
         creatDivs(16,16);
@@ -64,7 +64,7 @@ reSize()
 function grayColor() { 
     
     const boxs = container.querySelectorAll('.box')
-    btnGray.textContent = "GRAY"
+    btnGray.textContent = "GRAY SCALE"
     btnGray.addEventListener('click', () => {
         boxs.forEach(box => box.addEventListener('mouseover', ()=> {
             let RNum = Math.floor(Math.random() * 256);
@@ -80,7 +80,7 @@ grayColor()
 function rgbColors() {
     
     const boxs = container.querySelectorAll('.box')
-    btnRgb.textContent = "RGB"
+    btnRgb.textContent = "RAINBOW"
     btnRgb.addEventListener('click' ,() => {
         boxs.forEach(box => box.addEventListener('mouseover', () => {
             let R = Math.floor(Math.random() * 256);
